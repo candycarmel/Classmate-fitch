@@ -88,26 +88,26 @@ class ViewController: UIViewController {
         AppData.classmates.append(matthew)
         AppData.classmates.append(daniel)
         
-//        let classmates = [
-//            peter,
-//            ryan,
-//            cameron,
-//            evan,
-//            matthew,
-//            daniel,
-//            justin,
-//            ava,
-//            eva,
-//            brennan,
-//            jayden,
-//            john,
-//            shaun,
-//            ryan2,
-//            googan,
-//            micheal
-//        ]
-//
-//        AppData.classmates.append(contentsOf: classmates)
+        let classmates = [
+            peter,
+            ryan,
+            cameron,
+            evan,
+            matthew,
+            daniel,
+            justin,
+            ava,
+            eva,
+            brennan,
+            jayden,
+            john,
+            shaun,
+            ryan2,
+            googan,
+            micheal
+        ]
+
+        AppData.classmates.append(contentsOf: classmates)
         updateInformation(incStudent: 0)
         
         
