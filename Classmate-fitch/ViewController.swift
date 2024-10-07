@@ -44,7 +44,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        newButtonOutlet.layer.cornerRadius = 10
+        print("hi")
+        
+//        newButtonOutlet.layer.cornerRadius = 10
         editButtonOutlet.layer.cornerRadius = 10
         
         var peter = Classmate(name: "Peter", nickname: "Peter kickle", year: 3, pickles: .ALittleBit)
@@ -86,26 +88,26 @@ class ViewController: UIViewController {
         AppData.classmates.append(matthew)
         AppData.classmates.append(daniel)
         
-        let classmates = [
-            peter,
-            ryan,
-            cameron,
-            evan,
-            matthew,
-            daniel,
-            justin,
-            ava,
-            eva,
-            brennan,
-            jayden,
-            john,
-            shaun,
-            ryan2,
-            googan,
-            micheal
-        ]
-
-        AppData.classmates.append(contentsOf: classmates)
+//        let classmates = [
+//            peter,
+//            ryan,
+//            cameron,
+//            evan,
+//            matthew,
+//            daniel,
+//            justin,
+//            ava,
+//            eva,
+//            brennan,
+//            jayden,
+//            john,
+//            shaun,
+//            ryan2,
+//            googan,
+//            micheal
+//        ]
+//
+//        AppData.classmates.append(contentsOf: classmates)
         updateInformation(incStudent: 0)
         
         
@@ -125,7 +127,7 @@ class ViewController: UIViewController {
             AppData.curIndex += AppData.classmates.count;
         }
         
-        print(AppData.curIndex)
+//        print(AppData.curIndex)
         
         let curStudent = AppData.classmates[AppData.curIndex]
         
@@ -160,6 +162,9 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func refreshAction(_ sender: Any) {
+        updateInformation(incStudent: 0)
+    }
     
     
 

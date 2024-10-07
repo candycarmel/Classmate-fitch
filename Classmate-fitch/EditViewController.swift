@@ -40,11 +40,11 @@ class EditViewController: UIViewController {
         let year = Int(yearTextOutlet.text ?? "")
         if year == nil
         {
-            createAlert(alertName: "You FOOL. put in an INTEGER or i will rip off your skin.")
+            createAlert(alertName: "Please enter an integer.")
             return
         }
         
-        
+        curStudent.year = year!
         curStudent.name = nameTextOutlet.text ?? ""
         curStudent.nickname = nicknameTextOutlet.text ?? ""
         curStudent.pickles = picklesThing.selectedSegmentIndex == 0 ? .Yes : picklesThing.selectedSegmentIndex == 1 ? .No : .ALittleBit
@@ -64,4 +64,6 @@ class EditViewController: UIViewController {
         self.present(alert, animated: true)
         
     }
+    
+
 }

@@ -27,7 +27,7 @@ class AddViewController: UIViewController {
         let year = Int(yearTextOutlet.text ?? "")
         if year == nil
         {
-            createAlert(alertName: "You FOOL. put in an INTEGER or i will rip off your skin.")
+            createAlert(alertName: "Please enter an Integer.")
             return
         }
         
@@ -54,6 +54,8 @@ class AddViewController: UIViewController {
         self.present(alert, animated: true)
         
     }
+    
+    
     
     /*
     // MARK: - Navigation
